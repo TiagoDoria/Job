@@ -11,5 +11,8 @@ namespace JobDomain.Entities.Resume
     {
         [Required]
         public string Description { get; set; }
+
+        [Required]
+        public string Level { get; set; }
     }
 }

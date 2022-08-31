@@ -11,10 +11,12 @@ namespace JobDomain.Entities.Resume
     {
         [Required]
         public string Objective { get; set; }
-        public Formation Formation { get; set; }
-        public Experience Experience { get; set; }
-        public Certificate Certificate { get; set; }
-        public Language Language { get; set; }
+        public List<Formation> Formations { get; set; }
+        public List<Experience> Experiences { get; set; }
+        public List<Skills> Skills { get; set; }
+        public List<Certificate> Certificates { get; set; }
+        public List<Language> Languages { get; set; }
+        [Required]
         public int CandidateId { get; set; }
 
     }
