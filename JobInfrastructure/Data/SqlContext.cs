@@ -17,6 +17,10 @@ namespace JobInfrastructure.Data
         }
 
         public SqlContext(DbContextOptions<SqlContext> options) : base(options) { }
+
+        public DbSet<Candidate> Candidates { get; set; }
+        public DbSet<Company> Companies { get; set; }
+
         
     }
 }
